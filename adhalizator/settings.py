@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 BASE_DIR = os.path.normpath(os.path.dirname(__file__))
+WWW_DIR = os.path.join(PROJECT_ROOT, 'www')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -70,6 +71,9 @@ TEMPLATE_DIRS = (
                  os.path.join(BASE_DIR, 'static'),
           )
 
+
+MEDIA_ROOT = os.path.join(WWW_DIR, 'files')
+STATIC_ROOT = os.path.join(WWW_DIR, 'static')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
