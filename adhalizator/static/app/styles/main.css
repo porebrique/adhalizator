@@ -1,5 +1,21 @@
 body {
+    font-family: open sans;
+}
 
+a {
+    color: inherit;
+    
+}
+a:link, a:visited {
+    opacity:0.8;
+/*    color: #0E556D;*/
+    text-decoration: underline;
+/*    border-bottom: 1px solid rgba(0,0,0,0.1);*/
+}
+
+a:hover {
+    opacity: 1;
+    color: inherit;
 }
 
 #header {
@@ -9,27 +25,58 @@ body {
     margin-bottom: 2em;
     background: #484B5B;
     color: white;
-    padding-bottom: 1em;
+    padding: 0.5em 0;
 }
-
+#header-wrapper {
+    margin: 0 35px;
+}
 #header h1 {
-    margin-left: 35px;
+    margin: 0;
+    float: left;
+}
+#header .info {
+    float: left;
+    line-height: 135%;
+    margin-left: 2em;
+/*    margin-top: 0.38em;*/
+    color: #A9ABB2;
+    color: #C5C6CC;
 }
 #app {
     margin: 0 2em;
-
+    clear: both;
 }
 
 #footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px 0 0 0;
+/*    background: #484B5B;*/
+    background: rgba(72, 75, 91, 0.1);
+    padding: 0.5em 1em;
+    opacity: 0.5;
+}
 
+#footer p {
+    font-size: 0.8em;
+    line-height: 130%;
+    margin: 0;
 }
  #app textarea {
     height: 10em;
+     font-family: arial;
 
 }
 
 .buttons {
     margin-top: 1em;
+}
+
+.buttons .hint {
+    display: inline-block;
+    margin-left: 0.5em;
+    opacity: 0.35;
 }
 .row {
     clear: both;
