@@ -1,3 +1,12 @@
+html, body {
+    height: 100%;
+    
+}
+
+#all-wrapper {
+    position: relative;
+    min-height: 100%;
+}
 body {
     font-family: open sans;
 }
@@ -33,11 +42,12 @@ a:hover {
 #header h1 {
     margin: 0;
     float: left;
+    margin-right: 1em;
 }
 #header .info {
     float: left;
     line-height: 135%;
-    margin-left: 2em;
+    
 /*    margin-top: 0.38em;*/
     color: #A9ABB2;
     color: #C5C6CC;
@@ -45,10 +55,12 @@ a:hover {
 #app {
     margin: 0 2em;
     clear: both;
+    padding-bottom: 4em;
 }
 
 #footer {
     position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     border-radius: 5px 0 0 0;
